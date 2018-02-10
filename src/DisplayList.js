@@ -10,7 +10,7 @@ class DisplayList extends Component {
            tableData :[]
         };
       
-        const url = 'http://localhost/api.php/patienttable'
+        const url = '/api.php/patienttable'
         fetch(url,{method: 'GET'}).then((response)=>response.json())
         .then(response=>{
             this.setState({tableData: response})
