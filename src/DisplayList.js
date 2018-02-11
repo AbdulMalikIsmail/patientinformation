@@ -10,7 +10,7 @@ class DisplayList extends Component {
            tableData :[]
         };
       
-        const url = 'https://patientinfoapi.herokuapp.com'
+        const url = 'https://boiling-gorge-52414.herokuapp.com/api.php'
         fetch(url,{method: 'GET'}).then((response)=>response.json())
         .then(response=>{
             this.setState({tableData: response})
