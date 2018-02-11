@@ -64,7 +64,7 @@ class AddPatient extends React.Component {
             additionalInfo:this.state.additionalInfo,
             dob:this.state.dob
         }
-            fetch('http://localhost/api.php/patienttable', {
+            fetch('https://patientinfoapi.herokuapp.com', {
                 method: 'POST',
                 body : JSON.stringify(json)
             }).then(response=>{
