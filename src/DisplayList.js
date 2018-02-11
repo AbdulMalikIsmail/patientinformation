@@ -10,7 +10,7 @@ class DisplayList extends Component {
            tableData :[]
         };
       
-        const url = 'http://localhost/info.php'
+        const url = 'http://207.148.70.136/info.php'
         fetch(url,{method: 'GET'}).then((response)=>response.json())
         .then(response=>{
             this.setState({tableData: response})
