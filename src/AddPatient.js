@@ -64,10 +64,11 @@ class AddPatient extends React.Component {
             additionalInfo:this.state.additionalInfo,
             dob:this.state.dob
         }
-            fetch('http://207.148.70.136/info.php', {
+            fetch('http://localhost/info.php', {
                 method: 'POST',
                 body : JSON.stringify(json)
             }).then(response=>{
+                debugger
                 this.setState({open:true})
                    // alert('A name was submitted: ' + this.state.firstname + ' with age ' + this.state.age);
                 })
