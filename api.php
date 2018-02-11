@@ -30,7 +30,7 @@ $query = "insert into patienttable values ('$firstname','$lastname','$age','$gen
 
 $requestJSON = json_encode($request[0]);
 // connect to the mysql database
-$link = mysqli_connect('localhost', 'root', '', 'patientinformation');
+$link = mysqli_connect('207.148.70.136', 'root', 'malik is fat', 'patientinformation');
 mysqli_set_charset($link,'utf8');
  
 // retrieve the table and key from the path
